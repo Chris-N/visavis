@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Image, Navbar, Form, Dropdown, Nav, Button } from 'react-bootstrap';
 
 const Header = props => {
@@ -25,7 +26,7 @@ const Header = props => {
                                 <Dropdown.Item href="#/action-3">Past Matches</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
-                        <Button className="m-4" variant="outline-dark" href="/match">Current Match</Button>
+                        <Button className="m-4" variant="outline-dark">Current Match</Button>
                         <Button className="m-4" variant="outline-dark" onClick={props.userLogout}>Logout</Button>
                     </Form>
                 </Nav>
